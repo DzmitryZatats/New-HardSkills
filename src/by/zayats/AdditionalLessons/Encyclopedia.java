@@ -1,4 +1,4 @@
-package by.zayats.ExtraClasses;
+package by.zayats.AdditionalLessons;
 
 
 class Encyclopedia extends Book {

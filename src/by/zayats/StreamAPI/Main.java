@@ -28,7 +28,7 @@ public class Main {
         list2.add("Java");
         list2.stream().filter(str -> str.length() > 5)
                 .forEach(System.out::println);
-        
+
 
 //        Operation sum = (x, y) -> x + y; // с параметрами
 //        Operation sub = (x, y) -> x - y;
@@ -103,9 +103,6 @@ public class Main {
                 new ProfessionalStream("Python", 2000));
         professionalStreamStream.filter(prof -> prof.getSalary() > 4000)
                 .forEach(s -> System.out.println(s.getName() + " " + s.getSalary()));
-
-        // ДЗ что такое метод - Map
-        // - flatMap
 
     }
 }

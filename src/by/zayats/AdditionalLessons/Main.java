@@ -1,4 +1,4 @@
-package by.zayats.ExtraClasses;
+package by.zayats.AdditionalLessons;
 
 public class Main {
     public static void main(String[] args) {
