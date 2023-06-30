@@ -115,5 +115,59 @@ public class ClassWhile {
         //•причина, по которой прекращен вход людей в лифт.
 
 
+//        int sumWeight = 0;
+//        int personNum = 0;
+//        boolean numPers = false;
+//        while (sumWeight <= 450) {
+//            Scanner sc = new Scanner(System.in);
+//            int weight = sc.nextInt();
+//            sumWeight += weight;
+//            personNum++;
+//            if(personNum > 6){
+//                numPers = true;
+//                break;
+//            }
+//
+//
+//        }
+//        if (numPers){
+//            System.out.println("В лифте более 6 человек!");
+//        }else {
+//            System.out.println("Лифт прегружен!");
+//        }
+//        System.out.println("Вес в лифте = " +sumWeight);
+//        System.out.println("Количество человек в лифте = "+personNum);
+
+
+
+//        При внесении в компьютерную программу оценок группы из 30 учеников учитель может допустить ошибку (ввести число,
+//        не являющееся оценкой). Компьютерная программа игнорирует ошибку, а учитель
+//        получает возможность вновь занести с клавиатуры оценку.
+//        Напишите класс, который принимает с клавиатуры оценки 30 учеников до тех пор, пока все ученики не получат оценки.
+//        Класс должен подсчитать среднюю арифметическую оценку группы, а также количество ошибок, допущенных при введении оценок.
+
+
+        int sum = 0;
+        int error = 0;
+        int student = 0;
+
+        while (student < 10){
+            Scanner sc = new Scanner(System.in);
+            int grade = sc.nextInt();
+            student++;
+            if(grade > 0 || grade < 10){
+                sum += grade;
+            }else {
+                error++;
+            }
+
+        }
+        System.out.println(error);
+        System.out.println(student);
+        System.out.println(sum);
+        System.out.println("arifmet " + + sum / (float) 10);
+
+
+
     }
 }
