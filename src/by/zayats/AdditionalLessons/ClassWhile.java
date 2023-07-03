@@ -139,7 +139,6 @@ public class ClassWhile {
 //        System.out.println("Количество человек в лифте = "+personNum);
 
 
-
 //        При внесении в компьютерную программу оценок группы из 30 учеников учитель может допустить ошибку (ввести число,
 //        не являющееся оценкой). Компьютерная программа игнорирует ошибку, а учитель
 //        получает возможность вновь занести с клавиатуры оценку.
@@ -147,26 +146,60 @@ public class ClassWhile {
 //        Класс должен подсчитать среднюю арифметическую оценку группы, а также количество ошибок, допущенных при введении оценок.
 
 
-        int sum = 0;
-        int error = 0;
-        int student = 0;
+//        int sum = 0;
+//        int error = 0;
+//        int student = 0;
+//
+//        while (student < 30) {
+//            Scanner sc = new Scanner(System.in);
+//            int grade = sc.nextInt();
+//            if (grade > 0 && grade <= 10) {
+//                student++;
+//                sum += grade;
+//            } else {
+//                error++;
+//            }
+//
+//        }
+//        System.out.println("Ошибок при вводе: " + error);
+//        System.out.println("Средняя арифметическая оценка группы: " + +sum / (float) student);
 
-        while (student < 10){
-            Scanner sc = new Scanner(System.in);
-            int grade = sc.nextInt();
-            student++;
-            if(grade > 0 || grade < 10){
-                sum += grade;
-            }else {
-                error++;
-            }
 
-        }
-        System.out.println(error);
-        System.out.println(student);
-        System.out.println(sum);
-        System.out.println("arifmet " + + sum / (float) 10);
+//        Игра в кости проходит по следующим правилам: в каждом «круге» игры два игрока бросают каждый по два кубика,
+//        на гранях которых - цифры от 1 до 6. Игра заканчивается, если хотя бы один из победителей набрал больше 100 очков.
+//        Если один из игроков набрал больше 100 очков, а второй - нет, набравший более 100 объявляется победителем.
+//        Если оба игрока набрали более 100 очков, объявляется ничья.
+//        Напишите класс, реализующий модель этой игры и определяющий результат, в соответствии с которым на экран выводится
+//        текстовое сообщение.
 
+
+//        int sumPlayer1 = 0;
+//        int sumPlayer2 = 0;
+//        //int i = 0; // кол-во ходов
+//        while (sumPlayer1 < 100 || sumPlayer2 < 100) {
+//            int player1Num1 = (int) (Math.random() * 6) + 1;
+//            int player1Num2 = (int) (Math.random() * 6) + 1;
+//            int player2Num1 = (int) (Math.random() * 6) + 1;
+//            int player2Num2 = (int) (Math.random() * 6) + 1;
+//            sumPlayer1 += player1Num1 + player1Num2;
+//            sumPlayer2 += player2Num1 + player2Num2;
+//            //System.out.println(player1Num1 + " " + player1Num2 + "            " + player2Num1 + " " + player2Num2); // проверка
+//            //i++; // кол-во ходов
+//            if (sumPlayer1 > 100 || sumPlayer2 > 100){
+//                break;
+//            }
+//        }
+//
+//        if (sumPlayer1 > sumPlayer2) {
+//            System.out.println("Победил игрок №1");
+//        } else if (sumPlayer1 > 100 && sumPlayer2 > 100) {
+//            System.out.println("Ничья!");
+//        } else {
+//            System.out.println("Победил игрок №2");
+//        }
+//        //System.out.println(sumPlayer1); // проверка результата
+//        //System.out.println(sumPlayer2); // проверка результата
+//        //System.out.println(i + " Кол-во ходов"); // проверка
 
 
     }
