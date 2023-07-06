@@ -4,6 +4,8 @@ import java.lang.reflect.Array;
 
 public class Metods {
     public static void main(String[] args) {
+
+
 //        metod1(2,10);
 //        System.out.println(metod2(2355));
 //        System.out.println(metod3(34567));
