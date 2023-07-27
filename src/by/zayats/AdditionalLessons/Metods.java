@@ -17,7 +17,7 @@ public class Metods {
 //        System.out.println(metod9(8310923, 923498));
 //        metod10(90);
 //        System.out.println(metod11(123));
-        metod12(5);
+        metod12(6);
 
 
     }
@@ -174,11 +174,9 @@ public class Metods {
 
     static void metod12(int a){
         int sumDivNumber = 0;
-        for (int i = a; i < (a * 2) - 1 ; i++) {
-            for (int j = i; j < i; j++) {
-                if (0 == (i % j))
-                    sumDivNumber += j;
-            }
+        for (int i = a; i < (a * 2); i++) {
+            if (0 == (a % i))
+                sumDivNumber++;
         }
         System.out.println(sumDivNumber);
     }
