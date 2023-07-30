@@ -1,11 +1,9 @@
 package by.zayats.AdditionalLessons;
 
-import java.lang.reflect.Array;
-
 public class Metods {
     public static void main(String[] args) {
 
-
+/////////////// проверка методов
 //        metod1(2,10);
 //        System.out.println(metod2(2355));
 //        System.out.println(metod3(34567));
@@ -17,8 +15,12 @@ public class Metods {
 //        System.out.println(metod9(8310923, 923498));
 //        metod10(90);
 //        System.out.println(metod11(123));
-        metod12(6);
-
+//        metod12(2);
+//        metod13(12345,5);
+//        metod14(344444678,4);
+//        metod15(12345);
+//        metod16(1234432);
+//        metod17(234522);
 
     }
 
@@ -172,13 +174,123 @@ public class Metods {
     //метод, который принимает в качестве параметра целое положительное число N.
     // Метод возвращает общее количество делителей для всех чисел из диапазона N... 2N.
 
-    static void metod12(int a){
-        int sumDivNumber = 0;
-        for (int i = a; i < (a * 2); i++) {
-            if (0 == (a % i))
-                sumDivNumber++;
-        }
-        System.out.println(sumDivNumber);
-    }
+//    static int metod12(int a){
+//        int sumDivNumber = 0;
+//        for (int i = a; i <= (a * 2); i++) {
+//            for (int j = 1; j <= (a * 2); j++) {
+//                if (0 == (i % j))
+//                    sumDivNumber++;
+//
+//            }
+//        }
+//        System.out.println(sumDivNumber); // проверка
+//        return sumDivNumber;
+//    }
+
+
+    //Напишите метод, который принимает в качестве параметров целое число Х и цифру D. Метод возвращает значение true,
+    // если цифра D встречается хотя бы раз в числе Х; в ином случае метод возвращает значение false.
+
+//    static boolean metod13(int x, int d) {
+//        boolean stat = false;
+//        int b = 0;
+//        for (int i = x; i != 0 ; i = i / 10) {
+//            if (d == i % 10) {
+//                b = i % 10;
+//            }
+//        }
+//        if (d == b){
+//            stat = true;
+//        }
+//        System.out.println(stat);//проверка
+//            return stat;
+//
+//    }
+
+
+    //Напишите метод, который принимает в качестве параметров целое число Х и цифру D. Метод возвращает количество цифр D в числе Х.
+    //Например, для числа 765672 и цифры 7 метод возвращает значение 2.
+
+//        static int metod14(int x, int d) {
+//        int b = 0;
+//        for (int i = x; i != 0 ; i = i / 10) {
+//            if (d == i % 10) {
+//                b++;
+//            }
+//        }
+//        System.out.println(b);//проверка
+//            return b;
+//
+//    }
+
+
+    //Напишите метод, который принимает в качестве параметра положительное целое число и возвращает число с противоположным порядком
+    //цифр. Например, для параметра 123 метод возвратит 321, для параметра 120 метод вернет 21.
+
+
+//    static int metod15(int a) {
+//        int b = 0;
+//        for (int i = a; i != 0; i = i / 10) {
+//            int digit = a % 10;
+//            b = b * 10 + digit;
+//            a = a / 10;
+//        }
+//        System.out.println(b);// проверка
+//        return b;
+//    }
+
+
+    //Напишите метод, который принимает в качестве параметра целое число и возвращает значение true, если оно -
+    //симметричное (палиндром -как, например, число 53477435); в ином случае метод возвращает значение false.
+
+
+//    static boolean metod16(int a) {
+//        boolean res = false;
+//        int c = a;
+//        int b = 0;
+//        for (int i = c; i != 0; i = i / 10) {
+//            int digit = c % 10;
+//            b = b * 10 + digit;
+//            c = c / 10;
+//        }
+//
+//        if (a == b){
+//            res = true;
+//        }
+//        // если число семетричное, то в обратной последовательности оно будет одинаковым и равным.
+//        System.out.println(res);// проверка
+//        return res;
+//    }
+
+
+    //Напишите метод, который принимает в качестве параметра целое число и проверяет,
+    //каких цифр в нем больше -четных или нечетных (по значению).
+    //В случае если больше четных -метод возвращает 1, если больше нечетных - метод возвращает -1,
+    // в случае равенства количества четных и нечетных цифр - метод возвращает О.
+
+
+//    static int metod17(int a) {
+//        int chet = 0;
+//        int nechet = 0;
+//        int res = 0;
+//        for (int i = a; i != 0; i = i / 10) {
+//            if (i % 2 == 0) {
+//                chet++;
+//            } else nechet++;
+//        }
+//
+//        if (chet > nechet) {
+//            res = 1;
+//        } else if (nechet > chet) {
+//            res = -1;
+//        }
+//        System.out.println(res); //проверка
+//        return res;
+//    }
 
 }
+
+
+
+
+

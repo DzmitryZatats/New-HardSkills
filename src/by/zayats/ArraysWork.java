@@ -65,7 +65,7 @@ public class ArraysWork {
 //        }
 
 
-        //Вывод от 1 до 100 через массив (способ из видео) ВЫВОДИТ БРЕД!!!
+        //Вывод от 1 до 100 через массив
 //        int[] array = new int[100];
 //        for (int i = 0; i < array.length; i++) {
 //            array[i] = i;
