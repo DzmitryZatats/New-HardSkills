@@ -24,13 +24,6 @@ public class Order {
         System.out.println(name);
     }
 
-    public String printProducts() {
-        StringBuilder sb = new StringBuilder();
-        for (Product prod : product) {
-            sb.append(prod).append("\n");
-        }
-        return sb.toString();
-    }
 
     public int printOrderSum() {
         int sum = 0;
@@ -67,10 +60,14 @@ public class Order {
         order1.displayInfo();
 
 // вывод списка
-        System.out.println(order1.printProducts());
+        System.out.println(order1.product);
 
         // вывод общей суммы заказа
         System.out.println("Общая сумма закза = " + order1.printOrderSum());
+
+
     }
+
+
 
 }
